@@ -1,12 +1,19 @@
 package org.kevin.reactor.examples.subscriber;
 
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 @Slf4j
+@AllArgsConstructor
 public class SubscriberImpl implements Subscriber<String> {
 
 	private Subscription subscription;
+	private final String name;
+
+	public SubscriberImpl(String name) {
+		this.name = name;
+	}
 
 	public Subscription getSubscription(){
 		return subscription;

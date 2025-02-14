@@ -10,7 +10,7 @@ public class Main {
 
 	public static void demo1() throws InterruptedException {
 		var publisher = new PublisherImpl();
-		var subscriber = new SubscriberImpl();
+		var subscriber = new SubscriberImpl("");
 		publisher.subscribe(subscriber);
 		subscriber.getSubscription().request(3);
 		Thread.sleep(5);
