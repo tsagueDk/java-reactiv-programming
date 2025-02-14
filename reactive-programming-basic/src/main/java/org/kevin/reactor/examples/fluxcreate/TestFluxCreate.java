@@ -4,7 +4,7 @@ import org.kevin.reactor.examples.common.Util;
 import org.kevin.reactor.examples.fluxcreate.helper.NameGenerator;
 import reactor.core.publisher.Flux;
 
-public class testFluxCreate {
+public class TestFluxCreate {
 	public static void main(String[] args) {
 
 		//emitting values

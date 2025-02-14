@@ -6,7 +6,7 @@ import org.kevin.reactor.examples.fluxcreate.subscriber.SubscriberImpl;
 import reactor.core.publisher.Flux;
 
 @Slf4j
-public class testFluxSinkOnDemand {
+public class TestFluxSinkOnDemand {
     public static void main(String[] args) {
         produceOnDemand();
     }
