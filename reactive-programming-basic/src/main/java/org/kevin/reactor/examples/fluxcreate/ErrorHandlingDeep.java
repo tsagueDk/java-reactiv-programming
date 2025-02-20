@@ -14,8 +14,8 @@ public class ErrorHandlingDeep {
 //                .subscribe(Util.subscriber());
         Mono.just(5)
                 .map(i -> i==5? i/0: i)
-                .onErrorContinue((ex,obj) -> log.error("error on => {}",obj,ex))
                 .onErrorReturn(-1)
+                .onErrorContinue((ex,obj) -> log.error("error on => {}",obj,ex))
                 .subscribe(Util.subscriber());
 
 //        Mono.error(new RuntimeException("oops"))
