@@ -19,7 +19,8 @@ public class TestFluxCreate {
 		// emitting with custom FluxSink
 		var generator = new NameGenerator();
 		var flux = Flux.create(generator);
-		flux.subscribe(Util.subscriber());
+		flux.subscribe(Util.subscriber("sub1"));
+		flux.subscribe(Util.subscriber("sub2"));
 
 		generator.generated();
 
